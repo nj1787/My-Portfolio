@@ -91,7 +91,7 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
-    max-width: max-content;
+    width: 100%;
   }
 
   #myName {
@@ -131,6 +131,46 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
+    /* width: max-content; */
+  }
+
+  #myName {
+    position: absolute;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin: 0% 15%;
+    opacity: 1 !important;
+    color: darkorange;
+  }
+
+  #designation {
+    font-size: 2.8rem;
+    margin: 0px;
+    /* line-height: 0px; */
+  }
+
+  #about-me-content {
+    /* width: fit-content; */
+    /* margin-left: 0%; */
+    font-size: 1.5rem;
+    font-weight: 900;
+    /* margin-top: 10%; */
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  #page-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+  }
+
+  #header-image {
+    background-size: cover;
+    height: 20rem;
   }
 
   #myName {
@@ -147,6 +187,9 @@ body {
     font-size: 2.8rem;
     margin: 0px;
     /* line-height: 0px; */
+  }
+  #my-image {
+    width: max-content;
   }
 
   #about-me-content {
@@ -190,12 +233,12 @@ body {
   }
 
   #my-image img {
-    width: 610px;
+    width: 105vw;
   }
 
   #about-me-content {
     width: fit-content;
-    margin-left: 0%;
+    margin-left: 3%;
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 2%;
@@ -233,11 +276,11 @@ body {
   }
 
   #about-me-content {
-    width: fit-content;
-    margin-left: 5%;
+    /* width: fit-content; */
+    margin-left: 15%;
     font-size: 1.5rem;
     font-weight: 900;
-    margin-top: 10%;
+    /* margin-top: 10%; */
   }
 }
 
@@ -272,9 +315,10 @@ body {
   }
 
   #about-me-content {
-    width: fit-content;
-    margin-left: 5%;
-    font-size: 1.5rem;
+    /* width: max-content; */
+    margin-left: 15%;
+    line-break: strict;
+    font-size: 1.7rem;
     font-weight: 900;
     margin-top: 10%;
   }
@@ -311,8 +355,47 @@ body {
   }
 
   #about-me-content {
-    width: fit-content;
-    margin-left: 5%;
+    /* width: fit-content; */
+    margin-left: 8%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  #page-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    opacity: 0.8;
+  }
+
+  #header-image {
+    background-size: cover;
+    height: 20rem;
+  }
+
+  #myName {
+    position: absolute;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 6.5rem;
+    margin: 2% 22%;
+    opacity: 1 !important;
+    color: darkorange;
+  }
+
+  #designation {
+    font-size: 4rem;
+    /* margin: 205px; */
+    /* line-height: 0px; */
+  }
+
+  #about-me-content {
+    /* width: fit-content; */
+    /* margin-left: 8%; */
     font-size: 1.5rem;
     font-weight: 900;
     margin-top: 10%;
