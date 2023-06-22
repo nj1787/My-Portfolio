@@ -2,24 +2,65 @@ body {
   background-color: #bca;
 }
 
+.mb-blue {
+  background-color: aquamarine;
+  border-radius: 0.8rem;
+}
+
+.mb-orange {
+  background-color: orange;
+  border-radius: 0.8rem;
+}
+
+.mb-pink {
+  background-color: pink;
+  border-radius: 0.8rem;
+}
+
+.mb-green {
+  background-color: greenyellow;
+  border-radius: 0.8rem;
+}
+
+.eighty-five-percent {
+  width: 85%;
+  height: 3.8rem;
+}
+
+.fifty-percent {
+  width: 65%;
+  height: 3.8rem;
+}
+
+.ninety-five-percent {
+  width: 95%;
+  height: 3.8rem;
+}
+
+.ninety-percent {
+  width: 90%;
+  height: 3.8rem;
+}
+
 #page-header {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   opacity: 0.8;
 }
 
 #header-image {
-  background-size: cover;
+  /* background-size: cover; */
   height: 20rem;
+  width: 1355px;
 }
 
 #myName {
   position: absolute;
   color: aliceblue;
   font-weight: 900;
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   margin: 3% 30%;
   opacity: 1 !important;
   color: darkorange;
@@ -30,20 +71,67 @@ body {
   margin: 5%;
 }
 
+#my-image {
+  margin: 5%;
+}
+
 #about-me-content {
   /* width: max-content; */
   /* margin: 10%; */
   margin-top: 10%;
   font-size: 2rem;
   font-weight: 900;
+  height: max-content;
   /* margin-top: 10%; */
 }
 
-@media screen and (min-width: 280px) and (max-width: 359px) {
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  /* border: 2px solid black; */
+  width: 1355px;
+  background-color: azure;
+}
+.skills-display {
+  width: 70%;
+  height: 100px;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.skills-progress {
+  width: 35rem;
+  height: 4rem;
+  background-color: lightgray;
+  border-radius: 0.8rem;
+  border: 2px solid black;
+  margin-top: 35px;
+}
+
+.skill-name {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.skill-image {
+  margin-top: 35px;
+}
+
+/**************************************************************************************************/
+
+@media screen and (min-width: 150px) and (max-width: 350px) {
   #page-header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75vw;
     position: relative;
     opacity: 0.8;
   }
@@ -51,189 +139,203 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
-    width: min-content;
+    width: 390px;
   }
 
   #myName {
     position: absolute;
     color: aliceblue;
     font-weight: 900;
-    font-size: 3rem;
-    margin: 15% 40%;
+    font-size: 3.2rem;
+    margin: 2% 45%;
     opacity: 1 !important;
     color: darkorange;
   }
 
   #designation {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin: 0px;
     line-height: 0px;
   }
 
-  #about-me-content {
-    width: fit-content;
+  #my-image {
     margin-left: 15%;
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-top: 10%;
-  }
-}
-
-@media screen and (min-width: 360px) and (max-width: 413px) {
-  #page-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    opacity: 0.8;
-  }
-
-  #header-image {
-    background-size: cover;
-    height: 20rem;
-    width: 100%;
-  }
-
-  #myName {
-    position: absolute;
-    color: aliceblue;
-    font-weight: 900;
-    font-size: 3.7rem;
-    margin: 15% 5%;
-    opacity: 1 !important;
-    color: darkorange;
-  }
-
-  #designation {
-    font-size: 2.5rem;
-    margin: 5px;
-    line-height: 0px;
   }
 
   #about-me-content {
     width: fit-content;
     margin-left: 5%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
     margin-top: 10%;
   }
-}
 
-@media screen and (min-width: 412px) and (max-width: 767px) {
-  #page-header {
+  #skills {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    position: relative;
-    opacity: 0.8;
+    align-items: center;
+    margin-top: 5%;
+    /* border: 2px solid black; */
+    width: 390px;
+    background-color: azure;
   }
-
-  #header-image {
-    background-size: cover;
-    height: 20rem;
-    /* width: max-content; */
-  }
-
-  #myName {
-    position: absolute;
-    color: aliceblue;
-    font-weight: 900;
-    font-size: 2.8rem;
-    margin: 0% 15%;
-    opacity: 1 !important;
-    color: darkorange;
-  }
-
-  #designation {
-    font-size: 2.8rem;
-    margin: 0px;
-    /* line-height: 0px; */
-  }
-
-  #about-me-content {
-    /* width: fit-content; */
-    /* margin-left: 0%; */
-    font-size: 1.5rem;
-    font-weight: 900;
-    /* margin-top: 10%; */
-  }
-}
-
-@media screen and (min-width: 414px) and (max-width: 767px) {
-  #page-header {
+  .skills-display {
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid black; */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    position: relative;
-    opacity: 0.8;
-  }
-
-  #header-image {
-    background-size: cover;
-    height: 20rem;
-  }
-
-  #myName {
-    position: absolute;
-    color: aliceblue;
-    font-weight: 900;
-    font-size: 2.8rem;
-    margin: 15% 10%;
-    opacity: 1 !important;
-    color: darkorange;
-  }
-
-  #designation {
-    font-size: 2.8rem;
-    margin: 0px;
-    /* line-height: 0px; */
-  }
-  #my-image {
-    width: max-content;
-  }
-
-  #about-me-content {
-    width: fit-content;
     margin-left: 0%;
-    font-size: 1.5rem;
+    margin-top: 4%;
+  }
+
+  .skills-progress {
+    width: 12rem;
+    height: 4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin-top: 55px;
+    margin-left: -53px;
+  }
+
+  .skill-name {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
     font-weight: 900;
-    margin-top: 10%;
+  }
+
+  .skill-image {
+    margin-top: 35px;
+    margin-left: -100px;
   }
 }
 
-@media screen and (min-width: 540px) and (max-width: 767px) {
+/***************************************************************************************************/
+@media screen and (min-width: 350px) and (max-width: 490px) {
   #page-header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75vw;
     position: relative;
     opacity: 0.8;
   }
 
   #header-image {
     background-size: cover;
-    width: 100vw;
     height: 20rem;
+    width: 550px;
   }
 
   #myName {
     position: absolute;
     color: aliceblue;
     font-weight: 900;
-    font-size: 3.7rem;
-    margin: 15% 12%;
+    font-size: 3.2rem;
+    margin: 2% 40%;
     opacity: 1 !important;
     color: darkorange;
   }
 
   #designation {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin: 0px;
-    /* line-height: 0px; */
+    line-height: 0px;
   }
 
-  #my-image img {
-    width: 105vw;
+  #my-image {
+    margin-left: 2%;
+  }
+
+  #about-me-content {
+    width: max-content;
+    margin-left: 2%;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-top: 10%;
+  }
+
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    /* border: 2px solid black; */
+    width: 550px;
+    background-color: azure;
+  }
+  .skills-display {
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 4%;
+  }
+
+  .skills-progress {
+    width: 12rem;
+    height: 4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin-top: 55px;
+    margin-left: -95px;
+  }
+
+  .skill-name {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .skill-image {
+    margin-top: 35px;
+    margin-left: -200px;
+  }
+}
+
+/***************************************************************************************************/
+@media screen and (min-width: 490px) and (max-width: 767px) {
+  #page-header {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    position: relative;
+    opacity: 0.8;
+  }
+
+  #header-image {
+    background-size: cover;
+    height: 20rem;
+    width: 550px;
+  }
+
+  #myName {
+    position: absolute;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 3.2rem;
+    margin: 2% 45%;
+    opacity: 1 !important;
+    color: darkorange;
+  }
+
+  #designation {
+    font-size: 2.2rem;
+    margin: 0px;
+    line-height: 0px;
+  }
+
+  #my-image {
+    margin-left: 15%;
   }
 
   #about-me-content {
@@ -241,15 +343,59 @@ body {
     margin-left: 3%;
     font-size: 1.5rem;
     font-weight: 900;
-    margin-top: 2%;
+    margin-top: 10%;
+  }
+
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    /* border: 2px solid black; */
+    width: 550px;
+    background-color: azure;
+  }
+  .skills-display {
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 4%;
+  }
+
+  .skills-progress {
+    width: 12rem;
+    height: 4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin-top: 55px;
+    margin-left: -15px;
+  }
+
+  .skill-name {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .skill-image {
+    margin-top: 35px;
+    margin-left: -65px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 819px) {
+/***************************************************************************************************/
+@media screen and (min-width: 768px) and (max-width: 850px) {
   #page-header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 105vw;
     position: relative;
     opacity: 0.8;
   }
@@ -257,38 +403,87 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
+    width: 830px;
   }
 
   #myName {
     position: absolute;
     color: aliceblue;
     font-weight: 900;
-    font-size: 3.7rem;
-    margin: 10% 25%;
+    font-size: 4.5rem;
+    margin: 5% 25%;
     opacity: 1 !important;
     color: darkorange;
   }
 
   #designation {
-    font-size: 2.5rem;
-    margin: 5px;
+    font-size: 3.2rem;
+    margin: 0px;
     line-height: 0px;
   }
 
+  #my-image {
+    margin-left: 25%;
+  }
+
   #about-me-content {
-    /* width: fit-content; */
-    margin-left: 15%;
-    font-size: 1.5rem;
+    width: fit-content;
+    margin-left: 5%;
+    font-size: 3.2rem;
     font-weight: 900;
-    /* margin-top: 10%; */
+    margin-top: 10%;
+  }
+
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    /* border: 2px solid black; */
+    width: 850px;
+    background-color: azure;
+  }
+  .skills-display {
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 4%;
+  }
+
+  .skills-progress {
+    width: 12rem;
+    height: 4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin-top: 55px;
+    margin-left: -15px;
+  }
+
+  .skill-name {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .skill-image {
+    margin-top: 35px;
+    margin-left: -65px;
   }
 }
 
-@media screen and (min-width: 820px) and (max-width: 911px) {
+/***************************************************************************************************/
+@media screen and (min-width: 851px) and (max-width: 915px) {
   #page-header {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 105vw;
     position: relative;
     opacity: 0.8;
   }
@@ -296,108 +491,77 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
+    width: 910px;
   }
 
   #myName {
     position: absolute;
     color: aliceblue;
     font-weight: 900;
-    font-size: 3.7rem;
-    margin: 10% 25%;
+    font-size: 4.5rem;
+    margin: 5% 25%;
     opacity: 1 !important;
     color: darkorange;
   }
 
   #designation {
-    font-size: 2.5rem;
-    margin: 5px;
+    font-size: 3.2rem;
+    margin: 0px;
     line-height: 0px;
   }
 
-  #about-me-content {
-    /* width: max-content; */
-    margin-left: 15%;
-    line-break: strict;
-    font-size: 1.7rem;
-    font-weight: 900;
-    margin-top: 10%;
+  #my-image {
+    margin-left: 25%;
   }
-}
 
-@media screen and (min-width: 912px) and (max-width: 1280px) {
-  #page-header {
+  #about-me-content {
+    width: fit-content;
+    margin-left: 5%;
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-top: 1%;
+  }
+
+  #skills {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    position: relative;
-    opacity: 0.8;
+    align-items: center;
+    margin-top: 5%;
+    /* border: 2px solid black; */
+    width: 910px;
+    background-color: azure;
   }
-
-  #header-image {
-    background-size: cover;
-    height: 20rem;
-  }
-
-  #myName {
-    position: absolute;
-    color: aliceblue;
-    font-weight: 900;
-    font-size: 3.7rem;
-    margin: 10% 25%;
-    opacity: 1 !important;
-    color: darkorange;
-  }
-
-  #designation {
-    font-size: 2.5rem;
-    margin: 45px;
-    line-height: 0px;
-  }
-
-  #about-me-content {
-    /* width: fit-content; */
-    margin-left: 8%;
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-top: 10%;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-  #page-header {
+  .skills-display {
+    width: 70%;
+    height: 100px;
+    /* border: 2px solid black; */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    position: relative;
-    opacity: 0.8;
+    margin-left: 0%;
+    margin-top: 4%;
   }
 
-  #header-image {
-    background-size: cover;
-    height: 20rem;
+  .skills-progress {
+    width: 12rem;
+    height: 4rem;
+    background-color: lightgray;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+    margin-top: 55px;
+    margin-left: -15px;
   }
 
-  #myName {
-    position: absolute;
-    color: aliceblue;
+  .skill-name {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
     font-weight: 900;
-    font-size: 6.5rem;
-    margin: 2% 22%;
-    opacity: 1 !important;
-    color: darkorange;
   }
 
-  #designation {
-    font-size: 4rem;
-    /* margin: 205px; */
-    /* line-height: 0px; */
-  }
-
-  #about-me-content {
-    /* width: fit-content; */
-    /* margin-left: 8%; */
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin-top: 10%;
+  .skill-image {
+    margin-top: 35px;
+    margin-left: -65px;
   }
 }
