@@ -42,6 +42,18 @@ body {
   height: 3.8rem;
 }
 
+#sticky-navbar {
+  margin-top: 0px;
+  width: 450px;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: cadetblue;
+  z-index: 1;
+  position: sticky;
+}
+
 #page-header {
   display: flex;
   flex-direction: column;
@@ -127,7 +139,20 @@ body {
 
 /**************************************************************************************************/
 
-@media screen and (min-width: 150px) and (max-width: 350px) {
+@media screen and (min-width: 150px) and (max-width: 380px) {
+  .navbar {
+    width: 375px;
+  }
+
+  .navbar-nav {
+    margin-left: 155px !important;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .navbar-text {
+    margin-left: 55px !important;
+  }
   #page-header {
     display: flex;
     flex-direction: column;
@@ -139,7 +164,7 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
-    width: 390px;
+    width: 370px !important;
   }
 
   #myName {
@@ -159,12 +184,13 @@ body {
   }
 
   #my-image {
-    margin-left: 15%;
+    /* width: 200px !important; */
+    margin-left: 0%;
   }
 
   #about-me-content {
-    width: fit-content;
-    margin-left: 5%;
+    width: max-content;
+    margin-left: 2%;
     font-size: 2rem;
     font-weight: 900;
     margin-top: 10%;
@@ -198,7 +224,7 @@ body {
     border-radius: 0.8rem;
     border: 2px solid black;
     margin-top: 55px;
-    margin-left: -53px;
+    margin-left: -33px;
   }
 
   .skill-name {
@@ -215,7 +241,10 @@ body {
 }
 
 /***************************************************************************************************/
-@media screen and (min-width: 350px) and (max-width: 490px) {
+@media screen and (min-width: 381px) and (max-width: 490px) {
+  .navbar {
+    width: 515px;
+  }
   #page-header {
     display: flex;
     flex-direction: column;
@@ -227,7 +256,7 @@ body {
   #header-image {
     background-size: cover;
     height: 20rem;
-    width: 550px;
+    width: 515px !important;
   }
 
   #myName {
@@ -235,7 +264,7 @@ body {
     color: aliceblue;
     font-weight: 900;
     font-size: 3.2rem;
-    margin: 2% 40%;
+    margin: 2% 50%;
     opacity: 1 !important;
     color: darkorange;
   }
@@ -247,12 +276,12 @@ body {
   }
 
   #my-image {
-    margin-left: 2%;
+    margin-left: 15%;
   }
 
   #about-me-content {
     width: max-content;
-    margin-left: 2%;
+    margin-left: 12%;
     font-size: 1.6rem;
     font-weight: 900;
     margin-top: 10%;
@@ -286,7 +315,7 @@ body {
     border-radius: 0.8rem;
     border: 2px solid black;
     margin-top: 55px;
-    margin-left: -95px;
+    margin-left: -45px;
   }
 
   .skill-name {
@@ -298,7 +327,7 @@ body {
 
   .skill-image {
     margin-top: 35px;
-    margin-left: -200px;
+    margin-left: -130px;
   }
 }
 
@@ -392,6 +421,9 @@ body {
 
 /***************************************************************************************************/
 @media screen and (min-width: 768px) and (max-width: 850px) {
+  .navbar {
+    width: 810px;
+  }
   #page-header {
     display: flex;
     flex-direction: column;
